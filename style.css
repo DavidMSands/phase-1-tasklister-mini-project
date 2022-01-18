@@ -77,8 +77,19 @@ h1 {
   list-style: none;
 }
 
+#tasks {
+  list-style: none;
+  list-style-position: inside;
+  padding-left: 0;
+}
+
 #list li {
   font-family: 'Handlee', cursive;
   font-size: 1rem;
   font-weight: 50;
 }
+
+#check:checked ~ label {
+  text-decoration: line-through;
+}
+
