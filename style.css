@@ -1,37 +1,84 @@
 html {
   height: 100%;
   width: 100%;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background:  white;
+  position: relative;
 }
 
 button {
-  font-size: 7px;
+  background-color: #d77870;
+  border: none;
+  color: #fff;
+  font-size: .8rem;
+  text-decoration: none;
+  border-color: #fff;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #d77870;
+    border-color: #d77870;
+    border: 1px solid #d77870;
+    cursor: pointer;
+}
+
+#submit-btn {
+  background-color: #d77870;
+  border: none;
+  color: #fff;
+  width: 115px;
+  height: 21px;
+  font-size: .8rem;
+  text-decoration: none;
+  border-color: #fff;
+  font-family: 'Playfair Display', serif;
+}
+
+#submit-btn:hover {
+  background-color: #fff;
+    color: #d77870;
+    border-color: #d77870;
+    border: 1px solid #d77870;
+    cursor: pointer;
 }
 
 #main-content {
-  position: relative;
+  position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
   flex-direction: column;
-  border: 1px solid #333;
+  border: 1.5px solid #d77870;
   background: rgba(255, 255, 255, 0.3);
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  box-shadow: 10px 10px 17px rgba(77, 77, 77, 0.568);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  text-align: center;
 }
 
 #list {
-  margin: 10px;
-  border: 1px solid #333;
+  margin-top: 10px;
+  border: none;
   background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
+  padding: 15px 20px 18px 0px;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  justify-content: left;
+  list-style: none;
+}
+
+#list li {
+  font-family: 'Handlee', cursive;
+  font-size: 1rem;
+  font-weight: 50;
 }
