@@ -88,8 +88,32 @@ h1 {
   font-size: 1rem;
   font-weight: 50;
 }
+#check {
+  cursor: pointer;
+}
 
 #check:checked ~ label {
   text-decoration: line-through;
 }
 
+i[class='fas fa-edit'] {
+  margin-left: 5px;
+  color: #d77870;
+}
+
+i[class='fas fa-edit']:hover {
+  cursor: pointer;
+  
+}
+
+label {
+  pointer-events: none;
+}
+
+#edit {
+  pointer-events: visible;
+}
+
+#x {
+  margin-left: 5px;
+}
